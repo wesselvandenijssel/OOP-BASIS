@@ -49,7 +49,7 @@ class Plakbandhouder
 echo "<pre>";
 $plakband = new Plakbandhouder("Plakbandhouder",10,5,3);
 
-//$plakband->setplakband("afwezig");
+$plakband->setplakband("afwezig");
 //$plakband->setContent(100);
 
 //$plakband->setContent(100-10);
