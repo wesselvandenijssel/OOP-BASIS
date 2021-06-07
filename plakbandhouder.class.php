@@ -70,6 +70,27 @@ var_dump($plakband);
 
 
 echo '<br><hr><br>';
+class Plakband_houder {
+ public $name;
+ public $color;
+ public function __construct($name, $color) {
+   $this->name = $name;
+   $this->color = $color;
+ }
+ public function tekst() {
+   echo "De class hieronder is: {$this->name} en de kleur is {$this->color}.";
+ }
+}
+// Plakband is inherited from Plakband_houder
+class Plakband extends Plakband_houder {
+ public function bericht() {
+   echo "Dit is een nieuw bericht ";
+ }
+}
+$Plakband = new Plakband("Plakband", "Doorzichtig");
+$Plakband->bericht();
+$Plakband->tekst();
+echo '<br><hr><br>';
 
 include('simpleclass.php');
 $instance = new SimpleClass('Dit is een test');
